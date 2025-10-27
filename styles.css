@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(97, 94, 94);
+  font-family: "Funnel Display";
+}
+main {
+  margin: 0 auto;
+  width: max-content;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  display: flex;
+  border: 2px solid black;
+  flex-direction: column;
+  gap: 10px;
+  width: 676px;
+  padding: 30px 50px;
+  border-radius: 20px;
+}
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.question {
+  font-size: 23px;
+  position: relative;
+  background-color: black;
+  color: rgb(200, 199, 199);
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+.question::after {
+  position: absolute;
+  content: "🔻";
+  color: white;
+  right: 20px;
+}
+.answer {
+  background-color: rgb(134, 131, 131);
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 12px;
+  display: none;
+  font-size: 22px;
+}
